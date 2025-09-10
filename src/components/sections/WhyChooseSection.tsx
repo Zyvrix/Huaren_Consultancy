@@ -13,8 +13,8 @@ const WhyChooseSection = () => {
   const reasons = [
     {
       icon: Users,
-      title: "Experienced Team",
-      description: "Our team of qualified CAs brings over 20 years of combined experience in financial services.",
+      title: "Young & Dynamic Team",
+      description: "Our team of qualified CAs brings fresh perspectives and innovative solutions to financial services.",
       color: "text-blue-500"
     },
     {
@@ -70,7 +70,7 @@ const WhyChooseSection = () => {
             Your Success is Our Priority
           </h2>
           <p className="text-lg opacity-90 max-w-3xl mx-auto">
-            With decades of experience and a commitment to excellence, we provide the financial 
+            With innovative approaches and a commitment to excellence, we provide the financial 
             expertise your business needs to thrive in today's competitive market.
           </p>
         </div>
@@ -125,8 +125,8 @@ const WhyChooseSection = () => {
             <div className="text-sm opacity-80">Satisfied Clients</div>
           </div>
           <div>
-            <div className="text-3xl md:text-4xl font-bold text-gold mb-2">20+</div>
-            <div className="text-sm opacity-80">Years Experience</div>
+            <div className="text-3xl md:text-4xl font-bold text-gold mb-2">7</div>
+            <div className="text-sm opacity-80">Core Services</div>
           </div>
           <div>
             <div className="text-3xl md:text-4xl font-bold text-gold mb-2">15</div>

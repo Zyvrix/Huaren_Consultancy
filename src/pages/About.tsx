@@ -60,15 +60,14 @@ const About = () => {
               <h2 className="text-3xl font-bold text-foreground mb-6">Our Story</h2>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  Established in 2000, Professional CA Firm began as a vision to provide comprehensive 
-                  financial services that truly make a difference to businesses and individuals. 
-                  What started as a small practice has grown into one of the region's most trusted 
-                  chartered accountancy firms.
+                  A young and innovative CA firm driven by technology and fresh perspectives, offering 
+                  complete financial and compliance solutions. We combine modern methodologies with 
+                  proven expertise to deliver exceptional results for our clients.
                 </p>
                 <p>
-                  Over the years, we have built our reputation on the foundations of integrity, 
-                  expertise, and personalized service. Our team has grown to include highly qualified 
-                  professionals who share our commitment to excellence and client satisfaction.
+                  Our dynamic approach focuses on leveraging technology and innovative processes to 
+                  provide efficient, accurate, and timely financial services. Our team consists of 
+                  qualified professionals who bring energy, expertise, and dedication to every engagement.
                 </p>
                 <p>
                   Today, we serve over 500 clients across various industries, from startups to 

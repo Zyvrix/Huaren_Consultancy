@@ -1,34 +1,17 @@
 import { Button } from "@/components/ui/button";
 import { 
-  FileCheck, 
-  Calculator, 
-  BookOpen, 
   TrendingUp, 
-  FileText, 
-  Building,
+  Calculator, 
+  Building, 
+  FileCheck, 
+  Users, 
+  PiggyBank,
+  BarChart3,
   ArrowRight
 } from "lucide-react";
 
 const ServicesSection = () => {
   const services = [
-    {
-      icon: FileCheck,
-      title: "Audit & Assurance",
-      description: "Comprehensive audit services ensuring accuracy, compliance, and transparency in your financial reporting.",
-      features: ["Statutory Audits", "Internal Audits", "Tax Audits", "Compliance Audits"]
-    },
-    {
-      icon: Calculator,
-      title: "Taxation Services",
-      description: "Expert tax planning and compliance services to minimize liabilities and maximize savings.",
-      features: ["Income Tax", "Corporate Tax", "International Tax", "Tax Planning"]
-    },
-    {
-      icon: BookOpen,
-      title: "Accounting & Bookkeeping",
-      description: "Professional accounting services to maintain accurate financial records and reporting.",
-      features: ["Monthly Bookkeeping", "Financial Statements", "MIS Reports", "Payroll Management"]
-    },
     {
       icon: TrendingUp,
       title: "Business Advisory",
@@ -36,16 +19,40 @@ const ServicesSection = () => {
       features: ["Financial Planning", "Business Valuation", "Risk Management", "CFO Services"]
     },
     {
-      icon: FileText,
-      title: "GST & Compliance",
-      description: "Complete GST registration, filing, and compliance management services.",
-      features: ["GST Registration", "Monthly Filing", "GST Audit", "Compliance Review"]
+      icon: Calculator,
+      title: "Taxation",
+      description: "Expert tax planning and compliance services to minimize liabilities and maximize savings.",
+      features: ["Income Tax", "Corporate Tax", "International Tax", "Tax Planning"]
     },
     {
       icon: Building,
-      title: "Company Registration",
-      description: "End-to-end support for company incorporation and startup advisory services.",
-      features: ["Company Formation", "ROC Compliance", "Startup Advisory", "Legal Documentation"]
+      title: "Corporate Support Services",
+      description: "End-to-end support for company incorporation and corporate compliance management.",
+      features: ["Company Formation", "ROC Compliance", "Corporate Governance", "Legal Documentation"]
+    },
+    {
+      icon: FileCheck,
+      title: "Transaction Advisory Services",
+      description: "Comprehensive advisory services for mergers, acquisitions, and business transactions.",
+      features: ["Due Diligence", "Valuation Services", "M&A Advisory", "Financial Modeling"]
+    },
+    {
+      icon: Users,
+      title: "Soft Skills",
+      description: "Professional development and training services to enhance business capabilities.",
+      features: ["Leadership Training", "Communication Skills", "Team Building", "Professional Development"]
+    },
+    {
+      icon: PiggyBank,
+      title: "Investing",
+      description: "Investment advisory and portfolio management services for optimal returns.",
+      features: ["Portfolio Management", "Investment Planning", "Risk Assessment", "Market Analysis"]
+    },
+    {
+      icon: BarChart3,
+      title: "Statistics",
+      description: "Data analysis and statistical services for informed business decision making.",
+      features: ["Data Analytics", "Business Intelligence", "Performance Metrics", "Market Research"]
     }
   ];
 

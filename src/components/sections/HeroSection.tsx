@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Shield, Users, Award } from "lucide-react";
-import heroImage from "@/assets/hero-bg.jpg";
+import { ArrowRight, Shield, Users } from "lucide-react";
+import heroImage from "@/assets/hero-ai-finance.jpg";
 
 const HeroSection = () => {
   return (
@@ -18,12 +18,6 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="max-w-4xl mx-auto">
-          {/* Badge */}
-          <div className="inline-flex items-center px-4 py-2 bg-gold/20 border border-gold/30 rounded-full text-gold text-sm font-medium mb-6 fade-in">
-            <Award className="w-4 h-4 mr-2" />
-            Trusted by 500+ Businesses Across India
-          </div>
-
           {/* Main Heading */}
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight fade-in">
             Trusted Chartered Accountancy &amp; 
@@ -53,8 +47,8 @@ const HeroSection = () => {
               <div className="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mb-4">
                 <Shield className="w-8 h-8 text-gold" />
               </div>
-              <h3 className="text-white font-semibold text-lg mb-2">20+ Years Experience</h3>
-              <p className="text-white/80 text-sm">Proven track record in financial advisory</p>
+              <h3 className="text-white font-semibold text-lg mb-2">Tech-Driven Solutions</h3>
+              <p className="text-white/80 text-sm">Modern approach to financial advisory</p>
             </div>
 
             <div className="flex flex-col items-center">
@@ -67,7 +61,7 @@ const HeroSection = () => {
 
             <div className="flex flex-col items-center">
               <div className="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mb-4">
-                <Award className="w-8 h-8 text-gold" />
+                <Shield className="w-8 h-8 text-gold" />
               </div>
               <h3 className="text-white font-semibold text-lg mb-2">100% Compliance</h3>
               <p className="text-white/80 text-sm">Ensuring full regulatory compliance</p>

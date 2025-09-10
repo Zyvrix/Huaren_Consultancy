@@ -2,75 +2,19 @@ import Navigation from "@/components/layout/Navigation";
 import Footer from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { 
-  FileCheck, 
-  Calculator, 
-  BookOpen, 
   TrendingUp, 
-  FileText, 
-  Building,
+  Calculator, 
+  Building, 
+  FileCheck, 
+  Users, 
+  PiggyBank,
+  BarChart3,
   CheckCircle,
   ArrowRight
 } from "lucide-react";
 
 const Services = () => {
   const services = [
-    {
-      icon: FileCheck,
-      title: "Audit & Assurance",
-      description: "Comprehensive audit services ensuring accuracy, compliance, and transparency in your financial reporting with detailed risk assessment.",
-      features: [
-        "Statutory Audits as per Companies Act",
-        "Internal Audit & Risk Assessment", 
-        "Tax Audit & Compliance Review",
-        "Due Diligence for M&A",
-        "Management Audit Services",
-        "Forensic Audit & Investigation"
-      ],
-      benefits: [
-        "Enhanced financial credibility",
-        "Regulatory compliance assurance", 
-        "Risk identification & mitigation",
-        "Improved internal controls"
-      ]
-    },
-    {
-      icon: Calculator,
-      title: "Taxation Services",
-      description: "Expert tax planning and compliance services designed to minimize tax liabilities while ensuring full compliance with regulations.",
-      features: [
-        "Income Tax Planning & Filing",
-        "Corporate Tax Advisory",
-        "International Tax Consulting", 
-        "Tax Appeal & Litigation Support",
-        "Transfer Pricing Documentation",
-        "Advance Ruling Applications"
-      ],
-      benefits: [
-        "Significant tax savings",
-        "Reduced compliance burden",
-        "Expert representation before authorities",
-        "Strategic tax planning"
-      ]
-    },
-    {
-      icon: BookOpen,
-      title: "Accounting & Bookkeeping", 
-      description: "Professional accounting services to maintain accurate financial records, generate insights, and support informed decision-making.",
-      features: [
-        "Monthly Bookkeeping & Reconciliation",
-        "Financial Statement Preparation",
-        "Management Information Systems",
-        "Payroll Processing & Compliance",
-        "Inventory Management Systems",
-        "Cash Flow Management"
-      ],
-      benefits: [
-        "Accurate financial records",
-        "Real-time business insights",
-        "Streamlined operations",
-        "Improved cash flow management"
-      ]
-    },
     {
       icon: TrendingUp,
       title: "Business Advisory",
@@ -91,41 +35,117 @@ const Services = () => {
       ]
     },
     {
-      icon: FileText,
-      title: "GST & Compliance",
-      description: "Complete GST registration, filing, and compliance management with regular updates on changing regulations.",
+      icon: Calculator,
+      title: "Taxation",
+      description: "Expert tax planning and compliance services designed to minimize tax liabilities while ensuring full compliance with regulations.",
       features: [
-        "GST Registration & Migration",
-        "Monthly & Annual Return Filing",
-        "GST Audit & Assessment Support",
-        "Input Tax Credit Optimization",
-        "GST Refund Processing",
-        "Compliance Calendar Management"
+        "Income Tax Planning & Filing",
+        "Corporate Tax Advisory",
+        "International Tax Consulting", 
+        "Tax Appeal & Litigation Support",
+        "Transfer Pricing Documentation",
+        "Advance Ruling Applications"
       ],
       benefits: [
-        "100% compliance assurance",
-        "Optimized tax credits",
-        "Reduced penalty risks",
-        "Streamlined filing process"
+        "Significant tax savings",
+        "Reduced compliance burden",
+        "Expert representation before authorities",
+        "Strategic tax planning"
       ]
     },
     {
       icon: Building,
-      title: "Company Registration & Startup Advisory",
-      description: "End-to-end support for business incorporation, regulatory compliance, and strategic guidance for startups and new ventures.",
+      title: "Corporate Support Services",
+      description: "End-to-end support for business incorporation, regulatory compliance, and strategic guidance for corporate entities.",
       features: [
         "Company Incorporation Services",
         "Director Identification Number",
         "ROC Compliance Management",
-        "Startup Advisory & Mentoring",
-        "Intellectual Property Advisory",
-        "Funding & Investment Support"
+        "Corporate Governance Advisory",
+        "Board Meeting Support",
+        "Annual Compliance Management"
       ],
       benefits: [
         "Fast incorporation process",
         "Complete legal compliance",
         "Strategic business guidance",
-        "Investor readiness support"
+        "Regulatory peace of mind"
+      ]
+    },
+    {
+      icon: FileCheck,
+      title: "Transaction Advisory Services",
+      description: "Comprehensive advisory services for mergers, acquisitions, and complex business transactions with detailed analysis.",
+      features: [
+        "Due Diligence Services",
+        "Business Valuation & Modeling",
+        "M&A Advisory Support",
+        "Financial Restructuring",
+        "Investment Advisory",
+        "Transaction Documentation"
+      ],
+      benefits: [
+        "Informed decision making",
+        "Risk mitigation in deals",
+        "Optimized transaction value",
+        "Expert negotiation support"
+      ]
+    },
+    {
+      icon: Users,
+      title: "Soft Skills",
+      description: "Professional development and training services to enhance business capabilities and leadership effectiveness.",
+      features: [
+        "Leadership Development Programs",
+        "Communication Skills Training",
+        "Team Building Workshops",
+        "Professional Development Coaching",
+        "Presentation Skills Enhancement",
+        "Negotiation Skills Training"
+      ],
+      benefits: [
+        "Enhanced leadership capabilities",
+        "Improved team performance",
+        "Better communication outcomes",
+        "Increased professional confidence"
+      ]
+    },
+    {
+      icon: PiggyBank,
+      title: "Investing",
+      description: "Investment advisory and portfolio management services designed to optimize returns while managing risk effectively.",
+      features: [
+        "Portfolio Management Services",
+        "Investment Strategy Planning",
+        "Risk Assessment & Management",
+        "Market Analysis & Research",
+        "Wealth Management Advisory",
+        "Retirement Planning Services"
+      ],
+      benefits: [
+        "Optimized investment returns",
+        "Diversified risk management",
+        "Professional market insights",
+        "Long-term wealth creation"
+      ]
+    },
+    {
+      icon: BarChart3,
+      title: "Statistics",
+      description: "Data analysis and statistical services for informed business decision making and performance optimization.",
+      features: [
+        "Business Intelligence Analytics",
+        "Performance Metrics Development",
+        "Market Research & Analysis",
+        "Financial Data Modeling",
+        "Predictive Analytics Services",
+        "Statistical Report Generation"
+      ],
+      benefits: [
+        "Data-driven decision making",
+        "Enhanced business insights",
+        "Predictive market intelligence",
+        "Improved operational efficiency"
       ]
     }
   ];
