@@ -38,17 +38,17 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <div className="w-10 h-10 bg-gold rounded-lg flex items-center justify-center text-gold-foreground font-bold">
-                CA
+                V
               </div>
               <div>
-                <div className="text-lg font-bold">Professional CA Firm</div>
-                <div className="text-sm opacity-80">Chartered Accountants</div>
+                <div className="text-lg font-bold">Veritas</div>
+                <div className="text-sm opacity-80">Consultancy Firm</div>
               </div>
             </div>
             <p className="text-sm opacity-90 leading-relaxed">
-              Your trusted partner for comprehensive tax, audit, and financial 
-              advisory services. We help businesses and individuals achieve 
-              financial success with expert guidance.
+              Your trusted partner for comprehensive consultancy services. 
+              We bring clarity, trust, and innovation to every partnership, 
+              helping businesses achieve sustainable growth.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="hover:text-gold transition-colors">
@@ -104,34 +104,29 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 mt-0.5 text-gold" />
                 <div className="text-sm opacity-90">
-                  <p>123 Business Center</p>
-                  <p>Financial District</p>
-                  <p>Mumbai, Maharashtra 400001</p>
+                  <p>Business Center</p>
+                  <p>City, India</p>
                 </div>
               </div>
               
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-gold" />
                 <div className="text-sm opacity-90">
-                  <p>+91 98765 43210</p>
-                  <p>+91 11 4567 8900</p>
+                  <p>+91 76786 30568</p>
                 </div>
               </div>
               
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-gold" />
                 <div className="text-sm opacity-90">
-                  <p>info@professionalcafirm.com</p>
-                  <p>contact@professionalcafirm.com</p>
+                  <p>info@veritas.com</p>
                 </div>
               </div>
               
               <div className="flex items-start space-x-3">
                 <Clock className="w-5 h-5 mt-0.5 text-gold" />
                 <div className="text-sm opacity-90">
-                  <p>Mon - Fri: 9:00 AM - 6:00 PM</p>
-                  <p>Sat: 9:00 AM - 2:00 PM</p>
-                  <p>Sun: Closed</p>
+                  <p>Mon – Fri: 9:00 AM – 6:00 PM</p>
                 </div>
               </div>
             </div>
@@ -142,7 +137,7 @@ const Footer = () => {
         <div className="border-t border-primary-foreground/20 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-sm opacity-80">
-              © {currentYear} Professional CA Firm. All rights reserved.
+              © {currentYear} Veritas. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <Link to="/privacy" className="text-sm opacity-80 hover:text-gold transition-colors">

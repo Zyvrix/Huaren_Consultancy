@@ -45,9 +45,9 @@ const About = () => {
       {/* Hero Section */}
       <section className="py-20 bg-primary text-primary-foreground">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">About Our Firm</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">Who We Are</h1>
           <p className="text-xl opacity-90 max-w-3xl mx-auto">
-            Building lasting relationships through exceptional financial services and unwavering commitment to client success.
+            At Veritas, we believe in bringing clarity, trust, and innovation to every partnership.
           </p>
         </div>
       </section>
@@ -60,26 +60,29 @@ const About = () => {
               <h2 className="text-3xl font-bold text-foreground mb-6">Our Story</h2>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  A young and innovative CA firm driven by technology and fresh perspectives, offering 
-                  complete financial and compliance solutions. We combine modern methodologies with 
-                  proven expertise to deliver exceptional results for our clients.
+                  Founded in 2025, Veritas is a modern consultancy firm dedicated to guiding businesses 
+                  through every challenge with integrity and expertise.
                 </p>
                 <p>
-                  Our dynamic approach focuses on leveraging technology and innovative processes to 
-                  provide efficient, accurate, and timely financial services. Our team consists of 
-                  qualified professionals who bring energy, expertise, and dedication to every engagement.
+                  Our team may be young, but we are passionate problem-solvers with a clear vision: to 
+                  deliver measurable results while building long-lasting client relationships.
                 </p>
                 <p>
-                  Today, we serve over 500 clients across various industries, from startups to 
-                  established corporations, helping them navigate complex financial landscapes 
-                  and achieve sustainable growth.
+                  We combine strategic thinking, innovative solutions, and personalized support to help 
+                  our clients achieve sustainable growth. At Veritas, your success is our mission, and 
+                  your trust is our foundation.
                 </p>
+                <div className="pt-4">
+                  <p className="text-lg font-semibold text-foreground">
+                    Let's build the future together.
+                  </p>
+                </div>
               </div>
             </div>
             
             <div className="grid grid-cols-2 gap-6">
               <div className="bg-secondary/50 p-6 rounded-lg text-center">
-                <div className="text-3xl font-bold text-primary mb-2">2000</div>
+                <div className="text-3xl font-bold text-primary mb-2">2025</div>
                 <div className="text-muted-foreground">Year Established</div>
               </div>
               <div className="bg-secondary/50 p-6 rounded-lg text-center">
@@ -147,13 +150,12 @@ const About = () => {
               Meet Our Expert Team
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              Our team of qualified professionals brings decades of combined experience 
-              and specialized expertise to serve your financial needs.
+              Our team of professionals is committed to delivering trusted consultancy services with integrity and expertise.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {teamMembers.map((member, index) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {teamMembers.slice(0, 2).map((member, index) => (
               <div key={index} className="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
                 <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">
                   {member.avatar}
