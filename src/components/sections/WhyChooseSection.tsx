@@ -39,24 +39,9 @@ const WhyChooseSection = () => {
 
   const achievements = [
     {
-      icon: Shield,
-      title: "ISO 9001:2015 Certified",
-      description: "Quality management system certification"
-    },
-    {
       icon: Award,
       title: "ICAI Member Firm",
       description: "Recognized by Institute of Chartered Accountants"
-    },
-    {
-      icon: TrendingUp,
-      title: "500+ Successful Projects",
-      description: "Proven track record of client satisfaction"
-    },
-    {
-      icon: CheckCircle,
-      title: "100% Compliance Rate",
-      description: "Perfect compliance record maintained"
     }
   ];
 
@@ -102,17 +87,17 @@ const WhyChooseSection = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="flex justify-center">
             {achievements.map((achievement, index) => (
               <div 
                 key={index} 
-                className="text-center bg-white/5 rounded-lg p-6 hover:bg-white/10 transition-colors"
+                className="text-center bg-white/5 rounded-lg p-8 hover:bg-white/10 transition-colors max-w-sm"
               >
-                <div className="w-12 h-12 bg-gold/20 rounded-lg flex items-center justify-center mx-auto mb-4">
-                  <achievement.icon className="w-6 h-6 text-gold" />
+                <div className="w-16 h-16 bg-gold/20 rounded-lg flex items-center justify-center mx-auto mb-4">
+                  <achievement.icon className="w-8 h-8 text-gold" />
                 </div>
-                <h4 className="font-semibold mb-2">{achievement.title}</h4>
-                <p className="text-sm opacity-80">{achievement.description}</p>
+                <h4 className="font-semibold text-lg mb-2">{achievement.title}</h4>
+                <p className="opacity-80">{achievement.description}</p>
               </div>
             ))}
           </div>

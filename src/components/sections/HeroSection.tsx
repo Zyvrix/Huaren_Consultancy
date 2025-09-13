@@ -20,18 +20,17 @@ const HeroSection = () => {
         <div className="max-w-4xl mx-auto">
           {/* Main Heading */}
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight fade-in">
-            Your Trusted Partner in Business, 
-            <span className="text-gold block mt-2">Technology &amp; Financial Growth</span>
+            Empowering Business Growth Through 
+            <span className="text-gold block mt-2">Finance, Tech &amp; Strategy</span>
           </h1>
 
           {/* Subheading */}
           <div className="text-2xl md:text-3xl text-gold font-semibold mb-4 fade-in">
-            Expert Chartered Accountancy, IT Solutions &amp; Business Advisory
+            Chartered Accountancy | IT Solutions | Business Advisory
           </div>
           
           <p className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed fade-in">
-            Empowering startups, enterprises, and individuals with end-to-end services — from tax and audit to digital transformation, compliance, and strategic consulting.<br />
-            <span className="font-semibold">Your success is our mission.</span>
+            Your one-stop partner for finance, compliance, and digital transformation.
           </p>
 
           {/* CTA Buttons */}
@@ -41,7 +40,7 @@ const HeroSection = () => {
               <ArrowRight className="w-5 h-5 ml-2" />
             </Button>
             <Button variant="outline" size="lg" className="text-lg px-8 py-3 text-white border-white hover:bg-white hover:text-primary">
-              Explore Services
+              View Services
             </Button>
           </div>
 
@@ -52,7 +51,7 @@ const HeroSection = () => {
                 <Shield className="w-8 h-8 text-gold" />
               </div>
               <h3 className="text-white font-semibold text-lg mb-2">Multi-Domain Expertise</h3>
-              <p className="text-white/80 text-sm">Accounting, legal, tech, and business consulting under one roof</p>
+              <p className="text-white/80 text-sm">Finance, tech &amp; business under one roof</p>
             </div>
 
             <div className="flex flex-col items-center">
@@ -60,15 +59,15 @@ const HeroSection = () => {
                 <Users className="w-8 h-8 text-gold" />
               </div>
               <h3 className="text-white font-semibold text-lg mb-2">Skilled Professionals</h3>
-              <p className="text-white/80 text-sm">Team of qualified CAs, tech experts, and advisors</p>
+              <p className="text-white/80 text-sm">CAs, consultants &amp; engineers</p>
             </div>
 
             <div className="flex flex-col items-center">
               <div className="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mb-4">
                 <Shield className="w-8 h-8 text-gold" />
               </div>
-              <h3 className="text-white font-semibold text-lg mb-2">Compliant &amp; Future-Ready</h3>
-              <p className="text-white/80 text-sm">Focused on security, innovation, and regulation compliance</p>
+              <h3 className="text-white font-semibold text-lg mb-2">Future-Ready Solutions</h3>
+              <p className="text-white/80 text-sm">Compliant. Scalable. Secure.</p>
             </div>
           </div>
         </div>

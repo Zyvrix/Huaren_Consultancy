@@ -79,9 +79,10 @@ const TestimonialsSection = () => {
               <div className="mb-6">
                 {/* Stars */}
                 <div className="flex items-center justify-center mb-4">
-                  {[...Array(testimonials[currentSlide].rating)].map((_, i) => (
+                  {[...Array(4)].map((_, i) => (
                     <Star key={i} className="w-5 h-5 text-gold fill-current" />
                   ))}
+                  <Star className="w-5 h-5 text-gold fill-current opacity-50" />
                 </div>
                 
                 {/* Content */}
@@ -98,12 +99,6 @@ const TestimonialsSection = () => {
                 <div className="text-left">
                   <div className="font-semibold text-foreground text-lg">
                     {testimonials[currentSlide].name}
-                  </div>
-                  <div className="text-muted-foreground">
-                    {testimonials[currentSlide].position}
-                  </div>
-                  <div className="text-sm text-gold">
-                    {testimonials[currentSlide].company}
                   </div>
                 </div>
               </div>
@@ -155,7 +150,7 @@ const TestimonialsSection = () => {
                 <Star key={i} className="w-5 h-5 text-gold fill-current" />
               ))}
             </div>
-            <span className="text-foreground font-semibold">4.9/5</span>
+            <span className="text-foreground font-semibold">4.5/5</span>
             <span className="text-muted-foreground">• Based on 150+ reviews</span>
           </div>
         </div>
