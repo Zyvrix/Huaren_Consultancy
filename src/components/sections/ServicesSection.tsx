@@ -7,7 +7,13 @@ import {
   Users, 
   PiggyBank,
   BarChart3,
-  ArrowRight
+  ArrowRight,
+  Target,
+  Globe,
+  Shield,
+  Briefcase,
+  GraduationCap,
+  DollarSign
 } from "lucide-react";
 
 const ServicesSection = () => {
@@ -15,44 +21,44 @@ const ServicesSection = () => {
     {
       icon: TrendingUp,
       title: "Business Advisory",
-      description: "Strategic financial guidance to help your business grow and achieve its objectives.",
-      features: ["Financial Planning", "Business Valuation", "Risk Management", "CFO Services"]
+      description: "Strategic financial and business guidance tailored to help your company achieve its goals.",
+      features: ["Market Assessment & Expansion Support", "CFO Services", "Risk Management", "India Entry Strategies"]
     },
     {
       icon: Calculator,
       title: "Taxation",
-      description: "Expert tax planning and compliance services to minimize liabilities and maximize savings.",
-      features: ["Income Tax", "Corporate Tax", "International Tax", "Tax Planning"]
+      description: "Expert tax planning and compliance services designed to minimize liabilities and maximize savings.",
+      features: ["Direct & Indirect Tax", "Expatriate Tax Services", "International Tax Planning", "Transfer Pricing"]
     },
     {
       icon: Building,
       title: "Corporate Support Services",
-      description: "End-to-end support for company incorporation and corporate compliance management.",
-      features: ["Company Formation", "ROC Compliance", "Corporate Governance", "Legal Documentation"]
+      description: "End-to-end support for company incorporation, regulatory compliance, and corporate governance.",
+      features: ["Company Formation & Registration", "ROC Compliance", "Labour Law & POSH Act Compliance", "Virtual CFO & Payroll Services"]
     },
     {
       icon: FileCheck,
       title: "Transaction Advisory Services",
-      description: "Comprehensive advisory services for mergers, acquisitions, and business transactions.",
-      features: ["Due Diligence", "Valuation Services", "M&A Advisory", "Financial Modeling"]
-    },
-    {
-      icon: Users,
-      title: "Soft Skills",
-      description: "Professional development and training services to enhance business capabilities.",
-      features: ["Leadership Training", "Communication Skills", "Team Building", "Professional Development"]
-    },
-    {
-      icon: PiggyBank,
-      title: "Investing",
-      description: "Investment advisory and portfolio management services for optimal returns.",
-      features: ["Portfolio Management", "Investment Planning", "Risk Assessment", "Market Analysis"]
+      description: "Comprehensive consulting for mergers, acquisitions, valuations, and due diligence.",
+      features: ["Business Valuation", "Mergers & Acquisitions", "Joint Ventures", "Internal Audit"]
     },
     {
       icon: BarChart3,
-      title: "Statistics",
-      description: "Data analysis and statistical services for informed business decision making.",
-      features: ["Data Analytics", "Business Intelligence", "Performance Metrics", "Market Research"]
+      title: "Data Analytics & Insights",
+      description: "Leverage data-driven insights to enhance business decisions and optimize operations.",
+      features: ["Business Intelligence Reporting", "Market & Customer Analytics", "Predictive Modeling", "Performance Dashboards"]
+    },
+    {
+      icon: GraduationCap,
+      title: "Soft Skills & Training",
+      description: "Professional development and training services to boost your team's capabilities and effectiveness.",
+      features: ["Leadership Development", "Communication & Presentation Skills", "Team Building Workshops", "Customized Corporate Training"]
+    },
+    {
+      icon: DollarSign,
+      title: "Investing & Financial Management",
+      description: "Investment advisory and portfolio management services for maximizing returns.",
+      features: ["Wealth Management", "Portfolio Advisory", "Risk Analysis", "Financial Planning"]
     }
   ];
 
@@ -63,11 +69,11 @@ const ServicesSection = () => {
         <div className="text-center mb-16">
           <span className="text-gold font-semibold text-sm uppercase tracking-wide">Our Services</span>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-2 mb-4">
-            Comprehensive Financial Solutions
+            Comprehensive Consultancy Services
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            From audit and taxation to business advisory, we provide complete financial services 
-            to help your business thrive in today's competitive landscape.
+            From financial advisory and taxation to corporate compliance and cutting-edge technology solutions, 
+            Verita offers a full spectrum of consultancy services to help your business grow and succeed in today's dynamic market.
           </p>
         </div>
 

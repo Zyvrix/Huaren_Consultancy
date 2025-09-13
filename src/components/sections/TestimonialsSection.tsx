@@ -100,6 +100,9 @@ const TestimonialsSection = () => {
                   <div className="font-semibold text-foreground text-lg">
                     {testimonials[currentSlide].name}
                   </div>
+                  <div className="text-muted-foreground text-sm">
+                    {testimonials[currentSlide].company}
+                  </div>
                 </div>
               </div>
             </div>
