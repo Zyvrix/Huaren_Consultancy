@@ -3,7 +3,6 @@ import { ArrowRight, CheckCircle } from "lucide-react";
 
 const AboutSection = () => {
   const highlights = [
-    "ISO 9001:2015 Certified Firm",
     "Member of Institute of Chartered Accountants of India (ICAI)",
     "Serving clients across multiple industries",
     "Transparent pricing with no hidden costs"
@@ -18,20 +17,20 @@ const AboutSection = () => {
             <div>
               <span className="text-gold font-semibold text-sm uppercase tracking-wide">About Our Firm</span>
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-2 mb-4">
-                Your Trusted Financial Partner Since 2000
+                Your Trusted Business &amp; Technology Partner Since 2020
               </h2>
             </div>
             
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Professional CA Firm has been a cornerstone of financial excellence for over two decades. 
-              We specialize in providing comprehensive chartered accountancy services, helping businesses 
-              navigate complex financial landscapes with confidence and precision.
+              Professional CA Firm has been a reliable partner for businesses and individuals for over five years. 
+              What started as a Chartered Accountancy firm has now evolved into a multi-disciplinary service 
+              provider — offering financial advisory, tax solutions, business consulting, and cutting-edge technology services.
             </p>
             
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Our team of qualified Chartered Accountants and financial experts are committed to 
-              delivering personalized solutions that drive growth, ensure compliance, and optimize 
-              your financial performance.
+              Our team of qualified Chartered Accountants, consultants, and tech professionals is committed to 
+              delivering personalized, growth-oriented solutions that ensure compliance, drive innovation, and optimize 
+              overall performance.
             </p>
 
             {/* Highlights */}
@@ -55,12 +54,12 @@ const AboutSection = () => {
           {/* Stats */}
           <div className="grid grid-cols-2 gap-6">
             <div className="bg-white p-6 rounded-lg shadow-lg text-center card-shadow">
-              <div className="text-3xl font-bold text-primary mb-2">500+</div>
+              <div className="text-3xl font-bold text-primary mb-2">100+</div>
               <div className="text-muted-foreground">Happy Clients</div>
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-lg text-center card-shadow">
-              <div className="text-3xl font-bold text-primary mb-2">20+</div>
+              <div className="text-3xl font-bold text-primary mb-2">5+</div>
               <div className="text-muted-foreground">Years Experience</div>
             </div>
             

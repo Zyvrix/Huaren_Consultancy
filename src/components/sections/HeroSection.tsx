@@ -20,24 +20,28 @@ const HeroSection = () => {
         <div className="max-w-4xl mx-auto">
           {/* Main Heading */}
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight fade-in">
-            Trusted Chartered Accountancy &amp; 
-            <span className="text-gold block mt-2">Financial Advisory</span>
+            Your Trusted Partner in Business, 
+            <span className="text-gold block mt-2">Technology &amp; Financial Growth</span>
           </h1>
 
           {/* Subheading */}
+          <div className="text-2xl md:text-3xl text-gold font-semibold mb-4 fade-in">
+            Expert Chartered Accountancy, IT Solutions &amp; Business Advisory
+          </div>
+          
           <p className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed fade-in">
-            Helping businesses and individuals with expert tax, audit, and compliance 
-            solutions. Your success is our commitment.
+            Empowering startups, enterprises, and individuals with end-to-end services — from tax and audit to digital transformation, compliance, and strategic consulting.<br />
+            <span className="font-semibold">Your success is our mission.</span>
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 fade-in">
             <Button variant="gold" size="lg" className="text-lg px-8 py-3 hover-scale">
-              Get Consultation
+              Get Started
               <ArrowRight className="w-5 h-5 ml-2" />
             </Button>
             <Button variant="outline" size="lg" className="text-lg px-8 py-3 text-white border-white hover:bg-white hover:text-primary">
-              Our Services
+              Explore Services
             </Button>
           </div>
 
@@ -47,24 +51,24 @@ const HeroSection = () => {
               <div className="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mb-4">
                 <Shield className="w-8 h-8 text-gold" />
               </div>
-              <h3 className="text-white font-semibold text-lg mb-2">Tech-Driven Solutions</h3>
-              <p className="text-white/80 text-sm">Modern approach to financial advisory</p>
+              <h3 className="text-white font-semibold text-lg mb-2">Multi-Domain Expertise</h3>
+              <p className="text-white/80 text-sm">Accounting, legal, tech, and business consulting under one roof</p>
             </div>
 
             <div className="flex flex-col items-center">
               <div className="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mb-4">
                 <Users className="w-8 h-8 text-gold" />
               </div>
-              <h3 className="text-white font-semibold text-lg mb-2">Expert Team</h3>
-              <p className="text-white/80 text-sm">Qualified CAs and finance professionals</p>
+              <h3 className="text-white font-semibold text-lg mb-2">Skilled Professionals</h3>
+              <p className="text-white/80 text-sm">Team of qualified CAs, tech experts, and advisors</p>
             </div>
 
             <div className="flex flex-col items-center">
               <div className="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mb-4">
                 <Shield className="w-8 h-8 text-gold" />
               </div>
-              <h3 className="text-white font-semibold text-lg mb-2">100% Compliance</h3>
-              <p className="text-white/80 text-sm">Ensuring full regulatory compliance</p>
+              <h3 className="text-white font-semibold text-lg mb-2">Compliant &amp; Future-Ready</h3>
+              <p className="text-white/80 text-sm">Focused on security, innovation, and regulation compliance</p>
             </div>
           </div>
         </div>
