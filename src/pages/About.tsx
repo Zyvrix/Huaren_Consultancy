@@ -5,36 +5,25 @@ import { Users, Target, Eye, Award } from "lucide-react";
 const About = () => {
   const teamMembers = [
     {
-      name: "CA Rajesh Gupta",
-      position: "Managing Partner",
-      qualification: "FCA, CPA",
-      experience: "15+ Years",
+      name: "Sohan",
+      position: "Manager",
+      experience: "4+ Years",
       specialization: "Audit & Corporate Finance",
-      avatar: "RG"
+      photo: "/src/assets/team-sohan.jpg"
     },
     {
-      name: "CA Priya Menon",
-      position: "Partner - Taxation",
-      qualification: "FCA, LLB",
-      experience: "12+ Years",
+      name: "Sahil Panghal",
+      position: "Partner – Taxation",
+      experience: "3+ Years",
       specialization: "Direct & Indirect Taxation",
-      avatar: "PM"
+      photo: "/src/assets/team-sahil.jpg"
     },
     {
-      name: "CA Vikram Singh",
-      position: "Partner - Advisory",
-      qualification: "FCA, MBA",
-      experience: "10+ Years",
-      specialization: "Business Advisory & Compliance",
-      avatar: "VS"
-    },
-    {
-      name: "CA Anjali Sharma",
-      position: "Senior Manager",
-      qualification: "ACA, CS",
-      experience: "8+ Years",
-      specialization: "GST & Corporate Law",
-      avatar: "AS"
+      name: "Suraj",
+      position: "Tech Lead",
+      experience: "3+ Years",
+      specialization: "Software Developer",
+      photo: "/src/assets/team-suraj.jpg"
     }
   ];
 
@@ -154,15 +143,18 @@ const About = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {teamMembers.slice(0, 2).map((member, index) => (
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {teamMembers.map((member, index) => (
               <div key={index} className="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
-                <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">
-                  {member.avatar}
+                <div className="w-20 h-20 rounded-full overflow-hidden mx-auto mb-4">
+                  <img 
+                    src={member.photo} 
+                    alt={member.name}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <h3 className="text-xl font-semibold text-foreground mb-1">{member.name}</h3>
                 <div className="text-gold font-medium mb-2">{member.position}</div>
-                <div className="text-sm text-muted-foreground mb-2">{member.qualification}</div>
                 <div className="text-sm text-primary font-medium mb-3">{member.experience}</div>
                 <div className="text-sm text-muted-foreground">{member.specialization}</div>
               </div>

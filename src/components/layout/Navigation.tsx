@@ -25,17 +25,11 @@ const Navigation = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <div className="flex items-center">
-              <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center text-white font-bold text-lg">
-                CA
-              </div>
-              <div className="ml-3">
-                <div className="text-xl font-bold text-primary">
-                  Professional CA Firm
-                </div>
-                <div className="text-xs text-muted-foreground">
-                  Chartered Accountants
-                </div>
-              </div>
+              <img 
+                src="/src/assets/veritas-logo.jpg" 
+                alt="Veritas Logo" 
+                className="h-12 w-auto object-contain"
+              />
             </div>
           </Link>
 
