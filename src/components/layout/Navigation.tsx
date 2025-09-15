@@ -28,7 +28,7 @@ const Navigation = () => {
               <img 
                 src="/src/assets/veritas-logo.jpg" 
                 alt="Veritas Logo" 
-                className="h-12 w-auto object-contain"
+                className="h-14 w-auto object-contain"
               />
             </div>
           </Link>
