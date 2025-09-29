@@ -170,10 +170,9 @@ const Contact = () => {
                   <div>
                     <h3 className="text-lg font-semibold text-foreground mb-2">Office Address</h3>
                     <p className="text-muted-foreground">
-                      Professional CA Firm<br />
-                      123 Business Center, 5th Floor<br />
-                      Financial District<br />
-                      Mumbai, Maharashtra 400001<br />
+                      Veritas<br />
+                      Sec-69, Golden city of Gurgaon<br />
+                      122102, Haryana<br />
                       India
                     </p>
                   </div>
@@ -202,9 +201,9 @@ const Contact = () => {
                   <div>
                     <h3 className="text-lg font-semibold text-foreground mb-2">Email Addresses</h3>
                     <div className="text-muted-foreground space-y-1">
-                      <p>General Inquiries: info@professionalcafirm.com</p>
-                      <p>Business Queries: contact@professionalcafirm.com</p>
-                      <p>Careers: careers@professionalcafirm.com</p>
+                      <p>General Queries: info@veritasconsult.in</p>
+                      <p>Business: contact@veritasconsult.in</p>
+                      <p>Careers: careers@veritasconsult.in</p>
                     </div>
                   </div>
                 </div>
@@ -217,9 +216,8 @@ const Contact = () => {
                   <div>
                     <h3 className="text-lg font-semibold text-foreground mb-2">Office Hours</h3>
                     <div className="text-muted-foreground space-y-1">
-                      <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
-                      <p>Saturday: 9:00 AM - 2:00 PM</p>
-                      <p>Sunday: Closed</p>
+                      <p>Mon - Sat: 6:00 PM - 12:00 AM</p>
+                      <p>Sun: 11:00 AM - 5:00 PM</p>
                       <p className="text-sm mt-2 text-gold">Emergency consultations available by appointment</p>
                     </div>
                   </div>
@@ -249,7 +247,7 @@ const Contact = () => {
                     Interactive Map Coming Soon
                   </p>
                   <p className="text-sm text-muted-foreground mt-2">
-                    Professional CA Firm, Financial District, Mumbai
+                    Veritas, Sec-69, Golden city of Gurgaon
                   </p>
                 </div>
               </div>

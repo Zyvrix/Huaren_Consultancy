@@ -5,7 +5,7 @@ import { Users, Target, Eye, Award } from "lucide-react";
 const About = () => {
   const teamMembers = [
     {
-      name: "Sohan",
+      name: "Sohan Kharidaar",
       position: "Manager",
       experience: "4+ Years",
       specialization: "Audit & Corporate Finance",
