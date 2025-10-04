@@ -15,9 +15,12 @@ const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
 
-  const navItems = [
+  const navItemsBefore = [
     { name: "Home", path: "/" },
     { name: "About Us", path: "/about" },
+  ];
+
+  const navItemsAfter = [
     { name: "Resources", path: "/resources" },
     { name: "Blog", path: "/blog" },
     { name: "Contact", path: "/contact" },
@@ -49,7 +52,7 @@ const Navigation = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            {navItems.map((item) => (
+            {navItemsBefore.map((item) => (
               <Link
                 key={item.name}
                 to={item.path}
@@ -102,6 +105,23 @@ const Navigation = () => {
                 </NavigationMenuItem>
               </NavigationMenuList>
             </NavigationMenu>
+
+            {navItemsAfter.map((item) => (
+              <Link
+                key={item.name}
+                to={item.path}
+                className={`px-3 py-2 text-sm font-medium transition-colors relative ${
+                  isActive(item.path)
+                    ? "text-primary"
+                    : "text-foreground hover:text-primary"
+                }`}
+              >
+                {item.name}
+                {isActive(item.path) && (
+                  <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gold"></div>
+                )}
+              </Link>
+            ))}
           </div>
 
           {/* CTA Button & Phone */}
@@ -134,7 +154,7 @@ const Navigation = () => {
         {isOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
-              {navItems.map((item) => (
+              {navItemsBefore.map((item) => (
                 <Link
                   key={item.name}
                   to={item.path}
@@ -148,6 +168,34 @@ const Navigation = () => {
                   {item.name}
                 </Link>
               ))}
+              
+              <Link
+                to="/services"
+                className={`block px-3 py-2 text-base font-medium transition-colors ${
+                  isActive("/services")
+                    ? "text-primary bg-secondary"
+                    : "text-foreground hover:text-primary hover:bg-secondary"
+                }`}
+                onClick={() => setIsOpen(false)}
+              >
+                Services
+              </Link>
+
+              {navItemsAfter.map((item) => (
+                <Link
+                  key={item.name}
+                  to={item.path}
+                  className={`block px-3 py-2 text-base font-medium transition-colors ${
+                    isActive(item.path)
+                      ? "text-primary bg-secondary"
+                      : "text-foreground hover:text-primary hover:bg-secondary"
+                  }`}
+                  onClick={() => setIsOpen(false)}
+                >
+                  {item.name}
+                </Link>
+              ))}
+              
               <div className="px-3 py-2 space-y-2">
                 <a
                   href="tel:+1234567890"
