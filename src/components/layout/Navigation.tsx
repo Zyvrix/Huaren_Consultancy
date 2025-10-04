@@ -1,7 +1,15 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Phone } from "lucide-react";
+import { Menu, X, Phone, ChevronDown } from "lucide-react";
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+} from "@/components/ui/navigation-menu";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,10 +18,16 @@ const Navigation = () => {
   const navItems = [
     { name: "Home", path: "/" },
     { name: "About Us", path: "/about" },
-    { name: "Services", path: "/services" },
     { name: "Resources", path: "/resources" },
     { name: "Blog", path: "/blog" },
     { name: "Contact", path: "/contact" },
+  ];
+
+  const serviceCategories = [
+    { name: "Chartered Accounting", id: "chartered-accounting" },
+    { name: "Financials", id: "financials" },
+    { name: "Investing", id: "investing" },
+    { name: "Tech & IT Solutions", id: "tech-it" },
   ];
 
   const isActive = (path: string) => location.pathname === path;
@@ -51,6 +65,43 @@ const Navigation = () => {
                 )}
               </Link>
             ))}
+            
+            {/* Services Dropdown */}
+            <NavigationMenu>
+              <NavigationMenuList>
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger 
+                    className={`px-3 py-2 text-sm font-medium transition-colors relative bg-transparent hover:bg-transparent ${
+                      isActive("/services")
+                        ? "text-primary"
+                        : "text-foreground hover:text-primary"
+                    }`}
+                  >
+                    <Link to="/services" className="flex items-center gap-1">
+                      Services
+                    </Link>
+                    {isActive("/services") && (
+                      <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gold"></div>
+                    )}
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <div className="w-[400px] p-4 bg-background">
+                      <div className="space-y-2">
+                        {serviceCategories.map((category) => (
+                          <Link
+                            key={category.id}
+                            to={`/services#${category.id}`}
+                            className="block px-4 py-3 text-sm font-medium text-foreground hover:text-primary hover:bg-secondary rounded-md transition-colors"
+                          >
+                            {category.name}
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+              </NavigationMenuList>
+            </NavigationMenu>
           </div>
 
           {/* CTA Button & Phone */}
