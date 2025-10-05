@@ -10,13 +10,14 @@ import teamRajdhar from "@/assets/team-rajdhar.jpg";
 import teamAniket from "@/assets/team-aniket.jpg";
 import teamVirat from "@/assets/team-virat.jpg";
 import teamMannu from "@/assets/team-mannu.jpg";
+import teamYash from "@/assets/team-yash.jpg";
 
 const About = () => {
   const teamMembers = [
     {
       name: "Sohan Kharidaar",
-      position: "Consultant",
-      specialization: "Audit & Corporate Finance",
+      position: "Manager",
+      specialization: "Senior Consultant",
       photo: teamSohan
     },
     {
@@ -66,6 +67,12 @@ const About = () => {
       position: "Partner",
       specialization: "CTO",
       photo: teamMannu
+    },
+    {
+      name: "Yash",
+      position: "Partner",
+      specialization: "Consultant",
+      photo: teamYash
     }
   ];
 
