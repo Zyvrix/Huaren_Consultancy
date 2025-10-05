@@ -1,29 +1,71 @@
 import Navigation from "@/components/layout/Navigation";
 import Footer from "@/components/layout/Footer";
 import { Users, Target, Eye, Award } from "lucide-react";
+import teamSohan from "@/assets/team-sohan.jpg";
+import teamSahil from "@/assets/team-sahil.jpg";
+import teamSuraj from "@/assets/team-suraj.jpg";
+import teamDeepak from "@/assets/team-deepak.jpg";
+import teamRupesh from "@/assets/team-rupesh.jpg";
+import teamRajdhar from "@/assets/team-rajdhar.jpg";
+import teamAniket from "@/assets/team-aniket.jpg";
+import teamVirat from "@/assets/team-virat.jpg";
+import teamMannu from "@/assets/team-mannu.jpg";
 
 const About = () => {
   const teamMembers = [
     {
       name: "Sohan Kharidaar",
-      position: "Manager",
-      experience: "4+ Years",
+      position: "Consultant",
       specialization: "Audit & Corporate Finance",
-      photo: "/src/assets/team-sohan.jpg"
+      photo: teamSohan
     },
     {
       name: "Sahil Panghal",
       position: "Partner – Taxation",
-      experience: "3+ Years",
       specialization: "Direct & Indirect Taxation",
-      photo: "/src/assets/team-sahil.jpg"
+      photo: teamSahil
     },
     {
       name: "Suraj",
       position: "Tech Lead",
-      experience: "3+ Years",
       specialization: "Software Developer",
-      photo: "/src/assets/team-suraj.jpg"
+      photo: teamSuraj
+    },
+    {
+      name: "Deepak",
+      position: "Chief Customer Officer (CCO)",
+      specialization: "Operational Consultant",
+      photo: teamDeepak
+    },
+    {
+      name: "Rupesh",
+      position: "Tech Partner",
+      specialization: "Software Engineer",
+      photo: teamRupesh
+    },
+    {
+      name: "Rajdhar",
+      position: "Partner",
+      specialization: "Operational",
+      photo: teamRajdhar
+    },
+    {
+      name: "Aniket",
+      position: "Partner",
+      specialization: "Operational",
+      photo: teamAniket
+    },
+    {
+      name: "Virat",
+      position: "Partner",
+      specialization: "Social Media Manager",
+      photo: teamVirat
+    },
+    {
+      name: "Mannu Chauhan",
+      position: "Partner",
+      specialization: "CTO",
+      photo: teamMannu
     }
   ];
 
@@ -145,17 +187,16 @@ const About = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {teamMembers.map((member, index) => (
-              <div key={index} className="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
-                <div className="w-20 h-20 rounded-full overflow-hidden mx-auto mb-4">
+              <div key={index} className="bg-card rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
+                <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
                   <img 
                     src={member.photo} 
-                    alt={member.name}
+                    alt={`${member.name} - ${member.position}`}
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <h3 className="text-xl font-semibold text-foreground mb-1">{member.name}</h3>
+                <h3 className="text-xl font-semibold text-foreground mb-2">{member.name}</h3>
                 <div className="text-gold font-medium mb-2">{member.position}</div>
-                <div className="text-sm text-primary font-medium mb-3">{member.experience}</div>
                 <div className="text-sm text-muted-foreground">{member.specialization}</div>
               </div>
             ))}
