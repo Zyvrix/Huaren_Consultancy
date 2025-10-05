@@ -186,24 +186,22 @@ const Contact = () => {
                   <div>
                     <h3 className="text-lg font-semibold text-foreground mb-2">Phone Numbers</h3>
                     <div className="text-muted-foreground space-y-1">
-                      <p>Main Office: +91 98765 43210</p>
-                      <p>Direct Line: +91 11 4567 8900</p>
-                      <p>WhatsApp: +91 98765 43210</p>
+                      <p>Main: +91 70110 57059</p>
+                      <p>WhatsApp: +91 70110 57059</p>
+                      <p>Available Everytime: +91 76786 30568</p>
                     </div>
                   </div>
                 </div>
 
-                {/* Email Addresses */}
+                {/* Email Address */}
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
                     <Mail className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-foreground mb-2">Email Addresses</h3>
+                    <h3 className="text-lg font-semibold text-foreground mb-2">Email Address</h3>
                     <div className="text-muted-foreground space-y-1">
-                      <p>General Queries: info@veritasconsult.in</p>
-                      <p>Business: contact@veritasconsult.in</p>
-                      <p>Careers: careers@veritasconsult.in</p>
+                      <p>Veritasconsultant0@gmail.com</p>
                     </div>
                   </div>
                 </div>
@@ -228,31 +226,14 @@ const Contact = () => {
               <div className="mt-8 p-6 bg-gold/10 rounded-lg border border-gold/20">
                 <h3 className="text-lg font-semibold text-foreground mb-2">Emergency Contact</h3>
                 <p className="text-muted-foreground mb-3">
-                  For urgent matters requiring immediate attention, contact our emergency helpline:
+                  For urgent matters requiring immediate attention, contact our helpline:
                 </p>
-                <p className="text-lg font-bold text-primary">+91 98765 43210</p>
-                <p className="text-sm text-muted-foreground">Available 24/7 for existing clients</p>
+                <p className="text-lg font-bold text-primary">+91 76786 30568</p>
+                <p className="text-sm text-muted-foreground">Available everytime for clients</p>
               </div>
             </div>
           </div>
 
-          {/* Map Section */}
-          <div className="mt-20">
-            <h2 className="text-3xl font-bold text-foreground mb-6 text-center">Find Us</h2>
-            <div className="bg-secondary/30 rounded-lg p-8 text-center">
-              <div className="w-full h-96 bg-muted rounded-lg flex items-center justify-center">
-                <div className="text-center">
-                  <MapPin className="w-16 h-16 text-muted-foreground mx-auto mb-4" />
-                  <p className="text-lg text-muted-foreground">
-                    Interactive Map Coming Soon
-                  </p>
-                  <p className="text-sm text-muted-foreground mt-2">
-                    Veritas, Sec-69, Golden city of Gurgaon
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 

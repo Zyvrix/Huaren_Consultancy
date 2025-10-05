@@ -22,12 +22,10 @@ const Footer = () => {
   ];
 
   const services = [
-    "Audit & Assurance",
-    "Taxation Services", 
-    "GST Compliance",
-    "Company Registration",
-    "Business Advisory",
-    "Accounting & Bookkeeping"
+    "CA Services",
+    "Financials", 
+    "Investing",
+    "Tech & IT Solutions"
   ];
 
   return (
@@ -111,14 +109,16 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-gold" />
                 <div className="text-sm opacity-90">
-                  <p>+91 76786 30568</p>
+                  <p>Main: +91 70110 57059</p>
+                  <p>WhatsApp: +91 70110 57059</p>
+                  <p>24/7: +91 76786 30568</p>
                 </div>
               </div>
               
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-gold" />
                 <div className="text-sm opacity-90">
-                  <p>info@veritas.com</p>
+                  <p>Veritasconsultant0@gmail.com</p>
                 </div>
               </div>
               
