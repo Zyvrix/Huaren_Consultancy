@@ -36,7 +36,7 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <div className="w-10 h-10 bg-gold rounded-lg flex items-center justify-center text-gold-foreground font-bold">
-                V
+                H
               </div>
               <div>
                 <div className="text-lg font-bold">Huaren</div>
