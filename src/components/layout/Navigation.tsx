@@ -44,7 +44,7 @@ const Navigation = () => {
             <div className="flex items-center">
               <img 
                 src="/src/assets/veritas-logo.jpg" 
-                alt="Veritas Logo" 
+                alt="Huaren Logo" 
                 className="h-14 w-auto object-contain"
               />
             </div>

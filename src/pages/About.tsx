@@ -85,7 +85,7 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Who We Are</h1>
           <p className="text-xl opacity-90 max-w-3xl mx-auto">
-            At Veritas, we believe in bringing clarity, trust, and innovation to every partnership.
+            At Huaren, we believe in bringing clarity, trust, and innovation to every partnership.
           </p>
         </div>
       </section>
@@ -98,7 +98,7 @@ const About = () => {
               <h2 className="text-3xl font-bold text-foreground mb-6">Our Story</h2>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  Founded in 2025, Veritas is a modern consultancy firm dedicated to guiding businesses 
+                  Founded in 2025, Huaren is a modern consultancy firm dedicated to guiding businesses 
                   through every challenge with integrity and expertise.
                 </p>
                 <p>
@@ -107,7 +107,7 @@ const About = () => {
                 </p>
                 <p>
                   We combine strategic thinking, innovative solutions, and personalized support to help 
-                  our clients achieve sustainable growth. At Veritas, your success is our mission, and 
+                  our clients achieve sustainable growth. At Huaren, your success is our mission, and 
                   your trust is our foundation.
                 </p>
                 <div className="pt-4">

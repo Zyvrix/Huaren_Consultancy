@@ -198,7 +198,7 @@ const Services = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Services</h1>
           <p className="text-lg md:text-xl opacity-90 max-w-4xl mx-auto">
-            Veritas is a full-service accounting, tax, and business advisory firm. With our team of committed professionals, 
+            Huaren is a full-service accounting, tax, and business advisory firm. With our team of committed professionals, 
             uniquely positioned to produce outstanding results for clients with help of available resources, expertise and business insights.
           </p>
         </div>

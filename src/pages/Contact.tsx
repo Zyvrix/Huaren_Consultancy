@@ -170,7 +170,7 @@ const Contact = () => {
                   <div>
                     <h3 className="text-lg font-semibold text-foreground mb-2">Office Address</h3>
                     <p className="text-muted-foreground">
-                      Veritas<br />
+                      Huaren<br />
                       Sec-69, Golden city of Gurgaon<br />
                       122102, Haryana<br />
                       India
