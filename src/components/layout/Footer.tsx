@@ -9,6 +9,7 @@ import {
   Linkedin,
   Youtube
 } from "lucide-react";
+import huarenIcon from "@/assets/huaren-icon.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -35,8 +36,8 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-gold rounded-lg flex items-center justify-center text-gold-foreground font-bold">
-                H
+              <div className="w-10 h-10 rounded-lg flex items-center justify-center overflow-hidden">
+                <img src={huarenIcon} alt="Huaren H Logo" className="w-full h-full object-contain" />
               </div>
               <div>
                 <div className="text-lg font-bold">Huaren</div>

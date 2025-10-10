@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import veritasLogo from "@/assets/veritas-logo.jpg";
+import huarenIcon from "@/assets/huaren-icon.png";
 
 const Preloader = () => {
   const [loading, setLoading] = useState(true);
@@ -36,11 +36,11 @@ const Preloader = () => {
         {/* Logo Container with Pulse Animation */}
         <div className="relative">
           <div className="absolute inset-0 bg-gold/20 rounded-full blur-2xl animate-pulse" />
-          <div className="relative w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden border-4 border-gold animate-spin-slow">
+          <div className="relative w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden border-4 border-gold animate-spin-slow bg-white/10 backdrop-blur-sm flex items-center justify-center">
             <img
-              src={veritasLogo}
-              alt="Huaren Logo"
-              className="w-full h-full object-cover"
+              src={huarenIcon}
+              alt="Huaren H Logo"
+              className="w-16 h-16 md:w-20 md:h-20 object-contain"
             />
           </div>
         </div>

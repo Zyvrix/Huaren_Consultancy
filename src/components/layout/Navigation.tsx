@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Phone, ChevronDown } from "lucide-react";
+import { Menu, X, Phone } from "lucide-react";
+import huarenLogo from "@/assets/huaren-logo.png";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -43,9 +44,9 @@ const Navigation = () => {
           <Link to="/" className="flex items-center space-x-2">
             <div className="flex items-center">
               <img 
-                src="/src/assets/veritas-logo.jpg" 
+                src={huarenLogo} 
                 alt="Huaren Logo" 
-                className="h-14 w-auto object-contain"
+                className="h-12 w-auto object-contain"
               />
             </div>
           </Link>
