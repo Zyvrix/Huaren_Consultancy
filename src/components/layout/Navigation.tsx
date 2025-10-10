@@ -44,18 +44,18 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
+          <Link to="/" className="flex items-center space-x-2 mr-8">
             <div className="flex items-center">
               <img 
                 src={huarenLogo} 
                 alt="Huaren Logo" 
-                className="h-12 w-auto object-contain"
+                className="h-14 w-auto object-contain"
               />
             </div>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-12">
+          <div className="hidden md:flex items-center space-x-10">
             {navItemsBefore.map((item) => (
               <Link
                 key={item.name}
@@ -136,7 +136,7 @@ const Navigation = () => {
           </div>
 
           {/* CTA Button & Phone */}
-          <div className="hidden md:flex items-center space-x-6">
+          <div className="hidden md:flex items-center space-x-6 ml-8">
             <a
               href="tel:+917678630568"
               className="flex items-center text-primary hover:text-primary/80 transition-colors whitespace-nowrap"
