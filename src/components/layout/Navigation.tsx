@@ -12,6 +12,9 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 
+// PDF link for Union Budget - update this path as needed
+const UNION_BUDGET_PDF = "/assets/UnionBudget2025.pdf";
+
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
@@ -75,7 +78,7 @@ const Navigation = () => {
               <NavigationMenuList>
                 <NavigationMenuItem>
                   <NavigationMenuTrigger 
-                    className={`px-3 py-2 text-sm font-medium transition-colors relative bg-transparent hover:bg-transparent ${
+                    className={`px-3 py-2 text-sm font-medium transition-colors relative bg-transparent hover:bg-transparent data-[state=open]:bg-transparent ${
                       isActive("/services")
                         ? "text-primary"
                         : "text-foreground hover:text-primary"
@@ -84,9 +87,6 @@ const Navigation = () => {
                     <Link to="/services" className="flex items-center gap-1">
                       Services
                     </Link>
-                    {isActive("/services") && (
-                      <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gold"></div>
-                    )}
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <div className="w-[400px] p-4 bg-background">
@@ -123,6 +123,16 @@ const Navigation = () => {
                 )}
               </Link>
             ))}
+            
+            {/* Union Budget PDF Link */}
+            <a
+              href={UNION_BUDGET_PDF}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-3 py-2 text-sm font-medium text-foreground hover:text-primary transition-colors"
+            >
+              Union Budget
+            </a>
           </div>
 
           {/* CTA Button & Phone */}
@@ -196,6 +206,17 @@ const Navigation = () => {
                   {item.name}
                 </Link>
               ))}
+              
+              {/* Union Budget PDF Link */}
+              <a
+                href={UNION_BUDGET_PDF}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block px-3 py-2 text-base font-medium text-foreground hover:text-primary hover:bg-secondary transition-colors"
+                onClick={() => setIsOpen(false)}
+              >
+                Union Budget
+              </a>
               
               <div className="px-3 py-2 space-y-2">
                 <a
