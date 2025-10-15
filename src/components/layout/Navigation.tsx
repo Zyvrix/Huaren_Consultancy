@@ -44,7 +44,7 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20 md:h-24">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2 mr-8">
+          <Link to="/" className="flex items-center space-x-2 mr-16">
             <div className="flex items-center">
               <img 
                 src={huarenLogo} 
@@ -60,7 +60,7 @@ const Navigation = () => {
               <Link
                 key={item.name}
                 to={item.path}
-                className={`px-3 py-2 text-sm font-medium transition-colors relative whitespace-nowrap ${
+                className={`px-3 py-2 text-base font-medium transition-colors relative whitespace-nowrap ${
                   isActive(item.path)
                     ? "text-primary"
                     : "text-foreground hover:text-primary"
@@ -78,7 +78,7 @@ const Navigation = () => {
               <NavigationMenuList>
                 <NavigationMenuItem>
                   <NavigationMenuTrigger 
-                    className={`px-3 py-2 text-sm font-medium transition-colors relative bg-transparent hover:bg-transparent data-[state=open]:bg-transparent ${
+                    className={`px-3 py-2 text-base font-medium transition-colors relative bg-transparent hover:bg-transparent data-[state=open]:bg-transparent ${
                       isActive("/services")
                         ? "text-primary"
                         : "text-foreground hover:text-primary"
@@ -111,7 +111,7 @@ const Navigation = () => {
               <Link
                 key={item.name}
                 to={item.path}
-                className={`px-3 py-2 text-sm font-medium transition-colors relative whitespace-nowrap ${
+                className={`px-3 py-2 text-base font-medium transition-colors relative whitespace-nowrap ${
                   isActive(item.path)
                     ? "text-primary"
                     : "text-foreground hover:text-primary"
@@ -129,7 +129,7 @@ const Navigation = () => {
               href={UNION_BUDGET_PDF}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-3 py-2 text-sm font-medium text-foreground hover:text-primary transition-colors whitespace-nowrap"
+              className="px-3 py-2 text-base font-medium text-foreground hover:text-primary transition-colors whitespace-nowrap"
             >
               Union Budget
             </a>
@@ -142,7 +142,7 @@ const Navigation = () => {
               className="flex items-center text-primary hover:text-primary/80 transition-colors whitespace-nowrap"
             >
               <Phone className="w-4 h-4 mr-2 flex-shrink-0" />
-              <span className="text-sm font-medium">+91 76786 30568</span>
+              <span className="text-base font-medium">+91 76786 30568</span>
             </a>
             <Button variant="gold" size="sm" className="whitespace-nowrap">
               Get Consultation
