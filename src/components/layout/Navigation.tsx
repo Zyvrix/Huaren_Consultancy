@@ -44,18 +44,16 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20 md:h-24">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2 mr-16">
-            <div className="flex items-center">
-              <img 
-                src={huarenLogo} 
-                alt="Huaren Logo" 
-                className="h-16 md:h-20 w-auto object-contain"
-              />
-            </div>
+          <Link to="/" className="flex items-center space-x-2">
+            <img 
+              src={huarenLogo} 
+              alt="Huaren Logo" 
+              className="h-12 md:h-16 w-auto object-contain"
+            />
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-10">
+          <div className="hidden md:flex items-center space-x-10 ml-16">
             {navItemsBefore.map((item) => (
               <Link
                 key={item.name}
