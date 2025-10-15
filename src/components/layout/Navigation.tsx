@@ -48,12 +48,12 @@ const Navigation = () => {
             <img 
               src={huarenLogo} 
               alt="Huaren Logo" 
-              className="h-14 md:h-18 w-auto object-contain py-2"
+              className="h-16 md:h-20 w-auto object-contain py-2"
             />
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-10 ml-8">
+          <div className="hidden md:flex items-center space-x-4 ml-2">
             {navItemsBefore.map((item) => (
               <Link
                 key={item.name}
