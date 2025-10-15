@@ -54,15 +54,15 @@ const TestimonialsSection = () => {
   }, []);
 
   return (
-    <section className="py-20 bg-secondary/30">
+    <section className="py-12 sm:py-16 lg:py-20 bg-secondary/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-16">
-          <span className="text-gold font-semibold text-sm uppercase tracking-wide">Client Testimonials</span>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-2 mb-4">
+        <div className="text-center mb-10 sm:mb-12 lg:mb-16">
+          <span className="text-gold font-semibold text-xs sm:text-sm uppercase tracking-wide">Client Testimonials</span>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mt-2 mb-3 sm:mb-4 px-2">
             What Our Clients Say About Us
           </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto px-4">
             Don't just take our word for it. Here's what our satisfied clients have to say 
             about our professional services and commitment to excellence.
           </p>
@@ -70,37 +70,37 @@ const TestimonialsSection = () => {
 
         {/* Testimonial Carousel */}
         <div className="relative max-w-4xl mx-auto">
-          <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12 relative overflow-hidden">
+          <div className="bg-white rounded-2xl shadow-xl p-6 sm:p-8 lg:p-12 relative overflow-hidden">
             {/* Quote Icon */}
-            <Quote className="absolute top-6 right-6 w-12 h-12 text-gold/20" />
+            <Quote className="absolute top-4 right-4 sm:top-6 sm:right-6 w-10 h-10 sm:w-12 sm:h-12 text-gold/20" />
             
             {/* Current Testimonial */}
-            <div className="min-h-[300px] flex flex-col justify-center">
-              <div className="mb-6">
+            <div className="min-h-[280px] sm:min-h-[300px] flex flex-col justify-center">
+              <div className="mb-4 sm:mb-6">
                 {/* Stars */}
-                <div className="flex items-center justify-center mb-4">
+                <div className="flex items-center justify-center mb-3 sm:mb-4">
                   {[...Array(4)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 text-gold fill-current" />
+                    <Star key={i} className="w-4 h-4 sm:w-5 sm:h-5 text-gold fill-current" />
                   ))}
-                  <Star className="w-5 h-5 text-gold fill-current opacity-50" />
+                  <Star className="w-4 h-4 sm:w-5 sm:h-5 text-gold fill-current opacity-50" />
                 </div>
                 
                 {/* Content */}
-                <blockquote className="text-lg md:text-xl text-foreground text-center leading-relaxed mb-8">
+                <blockquote className="text-base sm:text-lg lg:text-xl text-foreground text-center leading-relaxed mb-6 sm:mb-8 px-2">
                   "{testimonials[currentSlide].content}"
                 </blockquote>
               </div>
 
               {/* Author Info */}
-              <div className="flex items-center justify-center space-x-4">
-                <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white font-bold text-lg">
+              <div className="flex items-center justify-center space-x-3 sm:space-x-4">
+                <div className="w-14 h-14 sm:w-16 sm:h-16 bg-primary rounded-full flex items-center justify-center text-white font-bold text-base sm:text-lg flex-shrink-0">
                   {testimonials[currentSlide].avatar}
                 </div>
                 <div className="text-left">
-                  <div className="font-semibold text-foreground text-lg">
+                  <div className="font-semibold text-foreground text-base sm:text-lg">
                     {testimonials[currentSlide].name}
                   </div>
-                  <div className="text-muted-foreground text-sm">
+                  <div className="text-muted-foreground text-xs sm:text-sm">
                     {testimonials[currentSlide].company}
                   </div>
                 </div>
@@ -108,53 +108,54 @@ const TestimonialsSection = () => {
             </div>
 
             {/* Navigation Buttons */}
-            <div className="absolute top-1/2 -translate-y-1/2 left-4">
+            <div className="absolute top-1/2 -translate-y-1/2 left-2 sm:left-4">
               <Button
                 variant="outline"
                 size="icon"
                 onClick={prevSlide}
-                className="rounded-full bg-white/80 hover:bg-white"
+                className="rounded-full bg-white/80 hover:bg-white h-10 w-10 sm:h-12 sm:w-12"
               >
-                <ChevronLeft className="w-5 h-5" />
+                <ChevronLeft className="w-4 h-4 sm:w-5 sm:h-5" />
               </Button>
             </div>
             
-            <div className="absolute top-1/2 -translate-y-1/2 right-4">
+            <div className="absolute top-1/2 -translate-y-1/2 right-2 sm:right-4">
               <Button
                 variant="outline"
                 size="icon"
                 onClick={nextSlide}
-                className="rounded-full bg-white/80 hover:bg-white"
+                className="rounded-full bg-white/80 hover:bg-white h-10 w-10 sm:h-12 sm:w-12"
               >
-                <ChevronRight className="w-5 h-5" />
+                <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5" />
               </Button>
             </div>
           </div>
 
           {/* Slide Indicators */}
-          <div className="flex justify-center space-x-2 mt-8">
+          <div className="flex justify-center space-x-2 mt-6 sm:mt-8">
             {testimonials.map((_, index) => (
               <button
                 key={index}
                 onClick={() => setCurrentSlide(index)}
-                className={`w-3 h-3 rounded-full transition-colors ${
+                className={`w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full transition-colors ${
                   index === currentSlide ? 'bg-gold' : 'bg-border'
                 }`}
+                aria-label={`Go to testimonial ${index + 1}`}
               />
             ))}
           </div>
         </div>
 
         {/* Overall Rating */}
-        <div className="text-center mt-16">
-          <div className="inline-flex items-center space-x-2 bg-white rounded-full px-6 py-3 shadow-lg">
+        <div className="text-center mt-12 sm:mt-16">
+          <div className="inline-flex flex-wrap items-center justify-center space-x-2 bg-white rounded-full px-5 py-2.5 sm:px-6 sm:py-3 shadow-lg">
             <div className="flex items-center">
               {[...Array(5)].map((_, i) => (
-                <Star key={i} className="w-5 h-5 text-gold fill-current" />
+                <Star key={i} className="w-4 h-4 sm:w-5 sm:h-5 text-gold fill-current" />
               ))}
             </div>
-            <span className="text-foreground font-semibold">4.5/5</span>
-            <span className="text-muted-foreground">• Based on 150+ reviews</span>
+            <span className="text-sm sm:text-base text-foreground font-semibold">4.5/5</span>
+            <span className="text-xs sm:text-sm text-muted-foreground">• Based on 150+ reviews</span>
           </div>
         </div>
       </div>

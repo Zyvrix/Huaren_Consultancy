@@ -56,80 +56,80 @@ const WhyChooseSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-primary text-primary-foreground">
+    <section className="py-12 sm:py-16 lg:py-20 bg-primary text-primary-foreground">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-16">
-          <span className="text-gold font-semibold text-sm uppercase tracking-wide">Why Choose Us</span>
-          <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-4">
+        <div className="text-center mb-10 sm:mb-12 lg:mb-16">
+          <span className="text-gold font-semibold text-xs sm:text-sm uppercase tracking-wide">Why Choose Us</span>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mt-2 mb-3 sm:mb-4 px-2">
             Your Success is Our Priority
           </h2>
-          <p className="text-lg opacity-90 max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg opacity-90 max-w-3xl mx-auto px-4">
             With innovative approaches and a commitment to excellence, we provide the financial 
             expertise your business needs to thrive in today's competitive market.
           </p>
         </div>
 
         {/* Main Reasons */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-12 sm:mb-16">
           {reasons.map((reason, index) => (
             <div 
               key={index} 
-              className="text-center group hover:transform hover:scale-105 transition-all duration-300"
+              className="text-center group hover:transform hover:scale-105 transition-all duration-300 p-4"
             >
-              <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-gold/20 transition-colors">
-                <reason.icon className="w-8 h-8 text-gold" />
+              <div className="w-14 h-14 sm:w-16 sm:h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4 group-hover:bg-gold/20 transition-colors">
+                <reason.icon className="w-7 h-7 sm:w-8 sm:h-8 text-gold" />
               </div>
-              <h3 className="text-xl font-semibold mb-3">{reason.title}</h3>
-              <p className="opacity-90 leading-relaxed">{reason.description}</p>
+              <h3 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3">{reason.title}</h3>
+              <p className="text-sm sm:text-base opacity-90 leading-relaxed">{reason.description}</p>
             </div>
           ))}
         </div>
 
         {/* Achievements */}
-        <div className="bg-white/5 rounded-2xl p-8 md:p-12">
-          <div className="text-center mb-12">
-            <h3 className="text-2xl md:text-3xl font-bold mb-4">
+        <div className="bg-white/5 rounded-2xl p-6 sm:p-8 lg:p-12">
+          <div className="text-center mb-8 sm:mb-10 lg:mb-12">
+            <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-3 sm:mb-4 px-2">
               Our Achievements & Certifications
             </h3>
-            <p className="text-lg opacity-90">
+            <p className="text-base sm:text-lg opacity-90 px-4">
               Recognition and certifications that demonstrate our commitment to excellence
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8">
             {achievements.map((achievement, index) => (
               <div 
                 key={index} 
-                className="text-center bg-white/5 rounded-lg p-6 hover:bg-white/10 transition-colors"
+                className="text-center bg-white/5 rounded-lg p-5 sm:p-6 hover:bg-white/10 transition-colors"
               >
-                <div className="w-12 h-12 bg-gold/20 rounded-lg flex items-center justify-center mx-auto mb-4">
-                  <achievement.icon className="w-6 h-6 text-gold" />
+                <div className="w-11 h-11 sm:w-12 sm:h-12 bg-gold/20 rounded-lg flex items-center justify-center mx-auto mb-3 sm:mb-4">
+                  <achievement.icon className="w-5 h-5 sm:w-6 sm:h-6 text-gold" />
                 </div>
-                <h4 className="font-semibold mb-2">{achievement.title}</h4>
-                <p className="text-sm opacity-80">{achievement.description}</p>
+                <h4 className="text-base sm:text-lg font-semibold mb-2">{achievement.title}</h4>
+                <p className="text-xs sm:text-sm opacity-80">{achievement.description}</p>
               </div>
             ))}
           </div>
         </div>
 
         {/* Trust Indicators */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 text-center">
-          <div>
-            <div className="text-3xl md:text-4xl font-bold text-gold mb-2">100+</div>
-            <div className="text-sm opacity-80">Satisfied Clients</div>
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mt-12 sm:mt-16 text-center">
+          <div className="p-4">
+            <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gold mb-1 sm:mb-2">100+</div>
+            <div className="text-xs sm:text-sm opacity-80">Satisfied Clients</div>
           </div>
-          <div>
-            <div className="text-3xl md:text-4xl font-bold text-gold mb-2">10+</div>
-            <div className="text-sm opacity-80">Core Services</div>
+          <div className="p-4">
+            <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gold mb-1 sm:mb-2">10+</div>
+            <div className="text-xs sm:text-sm opacity-80">Core Services</div>
           </div>
-          <div>
-            <div className="text-3xl md:text-4xl font-bold text-gold mb-2">15</div>
-            <div className="text-sm opacity-80">Expert Team Members</div>
+          <div className="p-4">
+            <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gold mb-1 sm:mb-2">15</div>
+            <div className="text-xs sm:text-sm opacity-80">Expert Team Members</div>
           </div>
-          <div>
-            <div className="text-3xl md:text-4xl font-bold text-gold mb-2">100%</div>
-            <div className="text-sm opacity-80">Compliance Rate</div>
+          <div className="p-4">
+            <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gold mb-1 sm:mb-2">100%</div>
+            <div className="text-xs sm:text-sm opacity-80">Compliance Rate</div>
           </div>
         </div>
       </div>
