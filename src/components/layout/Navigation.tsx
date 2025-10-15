@@ -44,11 +44,11 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20 md:h-24">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
+          <Link to="/" className="flex items-center">
             <img 
               src={huarenLogo} 
               alt="Huaren Logo" 
-              className="h-12 md:h-16 w-auto object-contain"
+              className="h-14 md:h-18 w-auto object-contain py-2"
             />
           </Link>
 
