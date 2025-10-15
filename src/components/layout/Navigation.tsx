@@ -53,7 +53,7 @@ const Navigation = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-10 ml-16">
+          <div className="hidden md:flex items-center space-x-10 ml-8">
             {navItemsBefore.map((item) => (
               <Link
                 key={item.name}
