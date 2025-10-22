@@ -1,9 +1,10 @@
 import Navigation from "@/components/layout/Navigation";
 import Footer from "@/components/layout/Footer";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import { Users, Target, Eye, Award } from "lucide-react";
 import teamSohan from "@/assets/team-sohan.jpg";
 import teamSahil from "@/assets/team-sahil.jpg";
-import teamSuraj from "@/assets/team-suraj.jpg";
 import teamDeepak from "@/assets/team-deepak.jpg";
 import teamRupesh from "@/assets/team-rupesh.jpg";
 import teamRajdhar from "@/assets/team-rajdhar.jpg";
@@ -25,12 +26,6 @@ const About = () => {
       position: "Partner – Taxation",
       specialization: "Direct & Indirect Taxation",
       photo: teamSahil
-    },
-    {
-      name: "Suraj",
-      position: "Tech Lead",
-      specialization: "Software Developer",
-      photo: teamSuraj
     },
     {
       name: "Deepak",
@@ -207,6 +202,37 @@ const About = () => {
                 <div className="text-xs sm:text-sm text-muted-foreground">{member.specialization}</div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-12 sm:py-16 lg:py-20 bg-secondary/50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-3 sm:mb-4 px-2">
+              Ready to Work with Us?
+            </h2>
+            <p className="text-base sm:text-lg text-muted-foreground mb-6 sm:mb-8 max-w-2xl mx-auto px-4">
+              Let's discuss how we can help your business grow with our comprehensive consultancy services.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
+              <Link to="/contact" className="w-full sm:w-auto">
+                <Button variant="gold" size="lg" className="w-full min-h-[48px]">
+                  Contact Us
+                </Button>
+              </Link>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSd6qLIzQ7IzanmF_k-yV7siLrIw4AmBOmirRfI-oYpAJZSHig/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+                <Button variant="outline" size="lg" className="w-full min-h-[48px]">
+                  Schedule Consultation
+                </Button>
+              </a>
+              <Link to="/services" className="w-full sm:w-auto">
+                <Button variant="outline" size="lg" className="w-full min-h-[48px]">
+                  View Services
+                </Button>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
