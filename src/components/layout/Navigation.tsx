@@ -72,38 +72,43 @@ const Navigation = () => {
             ))}
             
             {/* Services Dropdown */}
-            <NavigationMenu>
-              <NavigationMenuList>
-                <NavigationMenuItem>
-                  <NavigationMenuTrigger 
-                    className={`px-3 py-2 text-base font-medium transition-colors relative bg-transparent hover:bg-transparent data-[state=open]:bg-transparent ${
-                      isActive("/services")
-                        ? "text-primary"
-                        : "text-foreground hover:text-primary"
-                    }`}
-                  >
-                    <Link to="/services" className="flex items-center gap-1">
-                      Services
-                    </Link>
-                  </NavigationMenuTrigger>
-                  <NavigationMenuContent>
-                    <div className="w-[400px] p-4 bg-background">
-                      <div className="space-y-2">
-                        {serviceCategories.map((category) => (
-                          <Link
-                            key={category.id}
-                            to={`/services#${category.id}`}
-                            className="block px-4 py-3 text-sm font-medium text-foreground hover:text-primary hover:bg-secondary rounded-md transition-colors"
-                          >
-                            {category.name}
-                          </Link>
-                        ))}
+            <div className="relative">
+              <NavigationMenu>
+                <NavigationMenuList>
+                  <NavigationMenuItem>
+                    <NavigationMenuTrigger 
+                      className={`px-3 py-2 text-base font-medium transition-colors relative bg-transparent hover:bg-transparent data-[state=open]:bg-transparent ${
+                        isActive("/services")
+                          ? "text-primary"
+                          : "text-foreground hover:text-primary"
+                      }`}
+                    >
+                      <Link to="/services" className="flex items-center gap-1">
+                        Services
+                      </Link>
+                    </NavigationMenuTrigger>
+                    <NavigationMenuContent>
+                      <div className="w-[400px] p-4 bg-background">
+                        <div className="space-y-2">
+                          {serviceCategories.map((category) => (
+                            <Link
+                              key={category.id}
+                              to={`/services#${category.id}`}
+                              className="block px-4 py-3 text-sm font-medium text-foreground hover:text-primary hover:bg-secondary rounded-md transition-colors"
+                            >
+                              {category.name}
+                            </Link>
+                          ))}
+                        </div>
                       </div>
-                    </div>
-                  </NavigationMenuContent>
-                </NavigationMenuItem>
-              </NavigationMenuList>
-            </NavigationMenu>
+                    </NavigationMenuContent>
+                  </NavigationMenuItem>
+                </NavigationMenuList>
+              </NavigationMenu>
+              {isActive("/services") && (
+                <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gold"></div>
+              )}
+            </div>
 
             {navItemsAfter.map((item) => (
               <Link
