@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import { 
   TrendingUp, 
   Calculator, 
@@ -129,12 +130,16 @@ const ServicesSection = () => {
               a tailored financial solution that fits your needs perfectly.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
-              <Button variant="gold" size="lg" className="w-full sm:w-auto min-h-[48px]">
-                Schedule Consultation
-              </Button>
-              <Button variant="outline" size="lg" className="w-full sm:w-auto min-h-[48px]">
-                View All Services
-              </Button>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSd6qLIzQ7IzanmF_k-yV7siLrIw4AmBOmirRfI-oYpAJZSHig/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+                <Button variant="gold" size="lg" className="w-full min-h-[48px]">
+                  Schedule Consultation
+                </Button>
+              </a>
+              <Link to="/services" className="w-full sm:w-auto">
+                <Button variant="outline" size="lg" className="w-full min-h-[48px]">
+                  View All Services
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

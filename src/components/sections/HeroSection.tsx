@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Shield, Users } from "lucide-react";
+import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-ai-finance.jpg";
 
 const HeroSection = () => {
@@ -35,13 +36,17 @@ const HeroSection = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-8 sm:mb-12 fade-in px-4">
-            <Button variant="gold" size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-3 hover-scale w-full sm:w-auto min-h-[48px]">
-              Get Started
-              <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-2" />
-            </Button>
-            <Button variant="outline" size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-3 text-white border-white hover:bg-white hover:text-primary w-full sm:w-auto min-h-[48px]">
-              View Services
-            </Button>
+            <Link to="/contact" className="w-full sm:w-auto">
+              <Button variant="gold" size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-3 hover-scale w-full min-h-[48px]">
+                Get Started
+                <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-2" />
+              </Button>
+            </Link>
+            <Link to="/services" className="w-full sm:w-auto">
+              <Button variant="outline" size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-3 text-white border-white hover:bg-white hover:text-primary w-full min-h-[48px]">
+                View Services
+              </Button>
+            </Link>
           </div>
 
           {/* Trust Indicators */}

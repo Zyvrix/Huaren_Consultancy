@@ -136,7 +136,9 @@ const Navigation = () => {
           {/* CTA Button & Phone */}
           <div className="hidden md:flex items-center space-x-6 ml-8">
             <a
-              href="tel:+917678630568"
+              href="https://wa.me/917678630568?text=Hi!%20I'm%20interested%20in%20your%20consultancy%20services"
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center text-primary hover:text-primary/80 transition-colors whitespace-nowrap"
             >
               <Phone className="w-4 h-4 mr-2 flex-shrink-0" />
@@ -218,7 +220,9 @@ const Navigation = () => {
               
               <div className="px-3 py-2 space-y-2">
                 <a
-                  href="tel:+917678630568"
+                  href="https://wa.me/917678630568?text=Hi!%20I'm%20interested%20in%20your%20consultancy%20services"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center text-primary hover:text-primary/80 transition-colors"
                 >
                   <Phone className="w-4 h-4 mr-2" />
