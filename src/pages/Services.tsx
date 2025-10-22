@@ -305,10 +305,18 @@ const Services = () => {
             a tailored solution that fits your needs perfectly.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="gold" size="lg">
+            <Button 
+              variant="gold" 
+              size="lg"
+              onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSfXVs9J_OPBq1Z-fmZlVr_PzMY2eON3Yh0PKKOFxqrmNRyxsQ/viewform?usp=sf_link', '_blank')}
+            >
               Schedule Consultation
             </Button>
-            <Button variant="outline" size="lg">
+            <Button 
+              variant="outline" 
+              size="lg"
+              onClick={() => window.location.href = '/contact'}
+            >
               Contact Us
             </Button>
           </div>

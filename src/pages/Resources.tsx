@@ -236,27 +236,6 @@ const Resources = () => {
         </div>
       </section>
 
-      {/* Help Section */}
-      <section className="py-20 bg-primary text-primary-foreground">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Need Help Finding Something?
-          </h2>
-          <p className="text-xl opacity-90 mb-8">
-            Can't find the resource you're looking for? Our expert team is here to help 
-            you with any questions or specific requirements.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="gold" size="lg">
-              Contact Our Team
-            </Button>
-            <Button variant="outline" size="lg" className="text-white border-white hover:bg-white hover:text-primary">
-              Request Custom Resource
-            </Button>
-          </div>
-        </div>
-      </section>
-
       <Footer />
     </div>
   );
