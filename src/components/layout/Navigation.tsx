@@ -28,6 +28,7 @@ const Navigation = () => {
     { name: "Resources", path: "/resources" },
     { name: "Blog", path: "/blog" },
     { name: "Contact", path: "/contact" },
+    { name: "Chat Assistant", path: "/chatbot" },
   ];
 
   const serviceCategories = [
